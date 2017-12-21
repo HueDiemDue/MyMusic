@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnnListSong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/searchVSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search_view"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/search_song"
+
+        android:textColor="@color/colorGray">
+
+    </SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rclListSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

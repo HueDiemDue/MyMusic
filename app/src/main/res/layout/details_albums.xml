@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgAvt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_avt_song" />
+
+            <TextView
+                android:id="@+id/tvNameAlbumsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/imgAvt"
+                android:text="MrSiro" />
+
+            <TextView
+                android:id="@+id/tvInfoAlbums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameAlbumsDetails"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/imgAvt"
+               />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+
+            android:background="#334455" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcllstSong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

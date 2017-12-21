@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OSMusic</string>
+    <string name="search_song">Search</string>
+    <string name="playing">PLAYING</string>
+    <string name="reload_data">RELOAD DATA</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="artist">Artist</string>
+    <string name="favorite">Favorite</string>
+</resources>

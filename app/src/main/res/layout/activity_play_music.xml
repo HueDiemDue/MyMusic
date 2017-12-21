@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="14dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.os.music.player.activity.PlayMusicActivity">
+
+    <TextView
+        android:id="@+id/tvTitleNameSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:textColor="@color/colorRedOrange"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#334455" />
+
+    <ImageView
+        android:id="@+id/im_album_art"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_avt_song" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvCurrentPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/seekBarTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:00" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNameSongPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNameAristPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorRedOrange"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tvPrevSong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_previous" />
+
+        <ImageView
+            android:id="@+id/tvPause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_pause" />
+
+
+        <ImageView
+            android:id="@+id/tvNextSong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvDecreVolume"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_min_volume" />
+
+        <SeekBar
+            android:id="@+id/seekBarVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tvIncreVolume"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_max_volume" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="11">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <ToggleButton
+            android:id="@+id/toggle_shuffer"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_shuffle"
+            android:padding="8dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/toogle_like"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_like"
+            android:padding="8dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/toggle_repeat"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_repeat"
+            android:padding="8dp"
+            android:textColor="@color/colorRedOrange"
+            android:textOff=""
+            android:textOn="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</LinearLayout>

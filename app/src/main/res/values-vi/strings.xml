@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OSMusic</string>
+    <string name="search_song">Tìm kiếm</string>
+    <string name="playing">ĐANG PHÁT</string>
+    <string name="reload_data">CẬP NHẬT DỮ LIỆU</string>
+    <string name="songs">Bài hát</string>
+    <string name="albums">Albums</string>
+    <string name="artist">Nghệ sĩ</string>
+    <string name="favorite">Yêu Thích</string>s
+</resources>

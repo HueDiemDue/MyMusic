@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="7"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvNameArist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_toLeftOf="@+id/tvBack"
+        android:padding="5dp"
+        android:text="Name Song"
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/tvBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_back" />
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tvNameArist"
+        android:layout_marginTop="10dp"
+        android:background="#334455" />
+</LinearLayout>

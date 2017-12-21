@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgViewNoti"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/splash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameNoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Da tung vo gia"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvNameSingerNoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Mr Siro"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rvlButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tvCloseNoti">
+
+                <ImageView
+                    android:id="@+id/tvPrevNoti"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_previous" />
+
+
+                <ImageView
+                    android:id="@+id/tvPauseNoti"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvNextSongNoti"
+                    android:layout_toRightOf="@+id/tvPrevNoti"
+                    android:src="@drawable/ic_pause" />
+
+                <ImageView
+                    android:id="@+id/tvNextSongNoti"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_next" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/tvCloseNoti"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_close_noti" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
